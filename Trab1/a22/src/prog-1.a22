@@ -1,0 +1,20 @@
+/*
+   Este programa têm uma série de erros semânticos,
+   mas não tem erros sintáticos.
+   Para começar, nem sequer tem uma função com o nome 'main'
+*/
+
+int f(int a, bool b) {
+   x = 1;          // x não está declarado  
+   return false;   // a função devia retornar um int
+} 
+
+int xpto() {
+   string s;
+   s = "ola" - 43;    // a operação - não está defina entre uma string e um inteiro
+   bool b;
+   b = "miguel";      // Tipos inconsistentes: b é do tipo bool, "miguel" é do tipo string
+   b = f(s);          // f foi definido como tendo 2 argumentos. Só estamos a chamar com 1,
+                      // com a agravante do tipo de dados nem ser o esperado.
+}
+
