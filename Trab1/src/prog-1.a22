@@ -4,7 +4,7 @@
    Para começar, nem sequer tem uma função com o nome 'main'
 */
 
-int f(int a, bool b) {
+int f(int ^a, bool b) {
    x = 1;          // x não está declarado  
    return false;   // a função devia retornar um int
 } 

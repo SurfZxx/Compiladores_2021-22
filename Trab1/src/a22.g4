@@ -72,13 +72,13 @@ stored_values :
  ;
 
 stored_values1 :
- LARRAY INT RARRAY (STRUCT_DOT ID)?
+ LARRAY int_expression RARRAY (STRUCT_DOT ID)?
  | LPARENTH ((expression) COMMA? )* RPARENTH
  | STRUCT_DOT ID
  ;
 
 declare_variables :
- ID(LARRAY INT RARRAY)*
+ ID(LARRAY int_expression RARRAY)*
  | TYPES declare_variables (COMMA declare_variables)* SEMICOLON
  ;
 
